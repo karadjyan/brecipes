@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
+*{
+    font-family: Roboto;
+}
+
+/* The side navigation menu */
+.sidenav {
+    height: 100%; /* 100% Full-height */
+    width: 250px; /* 0 width - change this with JavaScript */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Stay on top */
+    top: 0;
+    left: 0;
+    background-color: #fff; /* Black*/
+    border-right: 1px solid #d3e0e9;
+    overflow-x: hidden; /* Disable horizontal scroll */
+    padding-top: 60px; /* Place content 60px from the top */
+    transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+}
+
+/* The navigation menu links */
+.sidenav a {
+    padding: 8px 8px 8px 8px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s
+}
+
+/* When you mouse over the navigation links, change their color */
+.sidenav a:hover, .offcanvas a:focus{
+    text-shadow: 1px 1px 4px #d3e0e9;
+}
+
+/* Position and style the close button (top right corner) */
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+/* Style page content - use this if you want to push the page content to the right when you open the side navigation */
+#main {
+    transition: margin-left .5s;
+    padding-left: 270px;
+    margin-right: 20px;
+}
+
+/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+}
+
+hr {
+    border : 0;
+    height: 2px;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0), #818181, rgba(0, 0, 0, 0));
+}
+
+.RBtnMargin{
+    margin-right: 10%;
+}
+
+.bg-white{
+    background-color: #fff;
+}
+
+.form-delete-container
+{
+    width: 20%;
+    height: 20%;
+    overflow: auto;
+    margin: auto;
+    position: absolute;
+    top: 0; left: 0; bottom: 0; right: 0;
+    z-index: 101;
+    display: none;
+    background: #fff;
+    border: 2px solid darkred;
+    text-align: center;
+}
+
+.form-delete-container.is-Responsive {
+    width: 60%;
+    height: 30%;
+    min-width: 200px;
+    max-width: 400px;
+    padding-top: 50px;
+}
+
+.title-ing{
+    display: none;
+}
+
+.form-menu{
+    display: none;
+}
